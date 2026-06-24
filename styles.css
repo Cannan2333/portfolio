@@ -771,6 +771,93 @@ h3 {
   padding-bottom: 72px;
 }
 
+.audi-section {
+  padding-top: 24px;
+}
+
+.audi-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  padding: 22px;
+}
+
+.audi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: start;
+}
+
+.audi-tags span {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.46);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.audi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.audi-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: var(--shadow);
+}
+
+.audi-card.wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.audi-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.audi-card div {
+  padding: 16px;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.audi-card span {
+  color: var(--faint);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.audi-card h3 {
+  margin-bottom: 0;
+}
+
+.audi-card p {
+  margin: 0;
+}
+
+.audi-summary {
+  margin-top: 14px;
+}
+
 .summary-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -836,6 +923,8 @@ h3 {
   .two-column,
   .method-grid,
   .case-grid,
+  .audi-intro,
+  .audi-grid,
   .placeholder-gallery,
   .split-panel,
   .decision-card,
@@ -848,6 +937,11 @@ h3 {
   .method-card,
   .summary-card {
     min-height: auto;
+  }
+
+  .audi-card.wide {
+    grid-column: auto;
+    grid-template-columns: 1fr;
   }
 
   .method-card h3,

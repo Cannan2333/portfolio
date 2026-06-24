@@ -9,6 +9,7 @@
     />
     <title>白溢青 - HMI UX Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
   </head>
   <body>
     <svg class="svg-sprite" aria-hidden="true">
@@ -61,6 +62,7 @@
         <a href="#ota">OTA</a>
         <a href="#dms">DMS</a>
         <a href="#hicar">HiCar</a>
+        <a href="#audi">Audi</a>
         <a href="#summary">Summary</a>
       </nav>
     </header>
@@ -129,6 +131,11 @@
               <span>03</span>
               <h2>Prototype</h2>
               <p>高保真原型与 concept</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h2>Audi EK07</h2>
+              <p>量产维护与概念探索</p>
             </article>
           </div>
         </div>
@@ -390,6 +397,93 @@
           <p>
             通过 OTA、DMS 和 HiCar 三个模块，我逐渐建立了量产 HMI 交互文档的工作方法：先理解业务和旧方案，再拆解流程、补全状态，并通过沟通确认让方案真正可落地。
           </p>
+        </div>
+      </section>
+
+      <section id="audi" class="page-section audi-section">
+        <div class="case-heading reveal">
+          <span class="case-number">04</span>
+          <div>
+            <p class="eyebrow">AUDI EK07 / Secondary Case</p>
+            <h2 class="feature-title">Audi EK07</h2>
+            <p class="case-subtitle">量产文档维护、复杂状态梳理与 concept 方案设计</p>
+          </div>
+        </div>
+
+        <div class="audi-intro glass-panel reveal">
+          <div>
+            <h3>项目定位</h3>
+            <p>
+              在 Audi EK07 项目中，我主要负责已有量产 HMI 交互文档的维护更新，并参与部分界面 concept 方案探索。相比 Volvo 的从 0 到 1 文档搭建，这部分更强调对既有系统逻辑的理解、版本一致性校验和复杂条件下的状态覆盖。
+            </p>
+          </div>
+          <div class="audi-tags">
+            <span>文档维护</span>
+            <span>状态矩阵</span>
+            <span>多场景分析</span>
+            <span>Concept</span>
+          </div>
+        </div>
+
+        <div class="audi-grid reveal">
+          <article class="audi-card">
+            <img src="assets/audi-l3-activation.png" alt="Audi L3 driving activation documentation" />
+            <div>
+              <span>01 / Complex State</span>
+              <h3>L3 智驾激活</h3>
+              <p>梳理自动驾驶激活中的几十种特殊情况，覆盖弹窗提醒、激活中界面元素变化和失败原因。</p>
+            </div>
+          </article>
+          <article class="audi-card">
+            <img src="assets/audi-child-mode.png" alt="Audi child mode settings documentation" />
+            <div>
+              <span>02 / Rule Update</span>
+              <h3>儿童模式设置</h3>
+              <p>调整子开关与总开关的编辑关系，使打开前可编辑、打开后置灰锁定的规则更符合用户操作直觉。</p>
+            </div>
+          </article>
+          <article class="audi-card">
+            <img src="assets/audi-eye-care.png" alt="Audi eye care mode concept" />
+            <div>
+              <span>03 / Concept Layout</span>
+              <h3>护眼模式 concept</h3>
+              <p>在有限空间中重新组织前后排控制入口，通过布局、滑动条和按钮轮切承接新增功能。</p>
+            </div>
+          </article>
+          <article class="audi-card">
+            <img src="assets/audi-child-seat.png" alt="Audi child seat concept with QR code" />
+            <div>
+              <span>04 / Information Design</span>
+              <h3>儿童座椅 concept</h3>
+              <p>在插图和控件限制下新增购买二维码，并补充说明文案，提升购买入口的可理解性。</p>
+            </div>
+          </article>
+          <article class="audi-card wide">
+            <img src="assets/audi-zero-gravity.png" alt="Audi zero gravity seat settings documentation" />
+            <div>
+              <span>05 / Scenario Matrix</span>
+              <h3>座椅设置 · 零重力</h3>
+              <p>按四座 / 五座、前排 / 后排与不同触发条件整理多种反馈情况，保证关键提醒不遗漏。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="summary-grid audi-summary reveal">
+          <article class="summary-card glass-panel">
+            <span>Audi Ability 01</span>
+            <h3>复杂状态覆盖</h3>
+            <p>在 L3 智驾和零重力座椅中，重点处理多触发条件、多失败原因和多反馈状态。</p>
+          </article>
+          <article class="summary-card glass-panel">
+            <span>Audi Ability 02</span>
+            <h3>既有逻辑维护</h3>
+            <p>基于已有系统规则做文档更新，保持页面状态、关联界面和版本逻辑一致。</p>
+          </article>
+          <article class="summary-card glass-panel">
+            <span>Audi Ability 03</span>
+            <h3>概念方案表达</h3>
+            <p>在护眼模式和儿童座椅中，将新增需求转化为可沟通、可迭代的界面方案。</p>
+          </article>
         </div>
       </section>
 
