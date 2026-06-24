@@ -893,6 +893,115 @@ h3 {
   margin-top: 14px;
 }
 
+.web-project-section {
+  padding-top: 72px;
+}
+
+.web-project-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  padding: 22px;
+}
+
+.web-project-hero h3 {
+  margin-bottom: 10px;
+}
+
+.web-project-hero p {
+  margin: 0;
+  max-width: 820px;
+  color: var(--muted);
+}
+
+.web-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: start;
+}
+
+.web-meta span {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.web-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.web-preview {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: var(--shadow);
+}
+
+.web-preview.primary {
+  grid-column: 1 / -1;
+}
+
+.web-image-frame {
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  background:
+    repeating-linear-gradient(90deg, rgba(16, 16, 16, 0.035) 0 1px, transparent 1px 44px),
+    repeating-linear-gradient(0deg, rgba(16, 16, 16, 0.025) 0 1px, transparent 1px 44px),
+    rgba(255, 255, 255, 0.52);
+}
+
+.web-image-frame img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+
+.web-preview.primary .web-image-frame img {
+  aspect-ratio: 2.25 / 1;
+  object-position: top center;
+}
+
+.web-preview-copy {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.web-preview-copy span {
+  color: var(--faint);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.web-preview-copy h3,
+.web-preview-copy p {
+  margin: 0;
+}
+
+.web-ability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
 .summary-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -959,7 +1068,10 @@ h3 {
   .method-grid,
   .case-grid,
   .audi-intro,
+  .web-project-hero,
   .audi-grid,
+  .web-showcase,
+  .web-ability-grid,
   .placeholder-gallery,
   .split-panel,
   .decision-card,
